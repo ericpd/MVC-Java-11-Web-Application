@@ -1,0 +1,67 @@
+.login-input {
+	width: 360px;
+	color: #646464;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid black;
+	font-family: "Open Sans";
+	font-size: 16px;
+	line-height: 35px;
+	text-align: justify;
+	margin-bottom: 19px;
+	width: 100%
+}
+
+.form-label {
+	text-align: center;
+	color: #0E2944;
+	font-family: "Open Sans";
+	font-size: 24px;
+	line-height: 33px;
+	padding-bottom: 45px;
+}
+
+.form-login-container {
+	padding: 240px 160px 80px 80px;
+}
+
+@media screen and (max-width: 1200px) {
+	.form-login-container {
+		padding: 240px 80px 80px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.form-login-container {
+		padding: 240px 15px 80px
+	}
+
+}
+
+.checkbox-label {
+	font-family: "Open Sans";
+	font-style: regular;
+	font-size: 16px;
+}
+
+.btn-login-adprimas {
+	margin-top: 15px;
+	background-color: #F3CF4D;
+	border: 0.8px solid #F3CF4D;
+	font-size: 21px;
+	color: white;
+	border-radius: 4px;
+	width: 100%
+}
+
+.image-login {
+	padding: 200px 0px 40px 0px;
+	width: 48.95833333333333VW;
+}
+@media screen and (max-width: 990px) {
+	.image-contaner {
+		display: none !important;
+	}
+}

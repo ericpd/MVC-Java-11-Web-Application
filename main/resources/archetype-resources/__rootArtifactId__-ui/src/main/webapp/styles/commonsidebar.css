@@ -1,0 +1,10 @@
+.system-version {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.system-version, .system-version h6 {
+	margin: 0px;
+	padding: 0px;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib>
+<taglib
+	xsi:schemaLocation="http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee web-jsptaglibrary_2_1.xsd"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.1">
+	
+	<tlib-version>1.2</tlib-version>
+	<uri>templateTag</uri>
+	
+	<tag>
+		<name>insert</name>
+		<description>Insert tag template on JSP page from Main JSP template</description>
+		<tag-class>${package}.ui.taglib.templates.InsertTag</tag-class>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<name>template</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>   
+		<name>put</name>
+		<description>Put tag template on JSP page from parent InsertTag template</description>
+		<tagclass>${package}.ui.taglib.templates.PutTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>content</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>direct</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>   
+		<name>get</name>
+		<description>Get tag template on JSP page from parent InsertTag template</description>
+		<tagclass>${package}.ui.taglib.templates.GetTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib>
+<taglib
+	xsi:schemaLocation="http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee web-jsptaglibrary_2_1.xsd"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.1">
+	
+	<tlib-version>1.2</tlib-version>
+	<uri>${parentArtifactId}Tag</uri>
+	
+	<tag>
+		<name>currentDate</name>
+		<description>to prevent caching of JS and CSS files</description>
+		<tag-class>${package}.ui.taglib.CurrentDateTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	<tag>
+		<name>message</name>
+		<description>for i18n of UI messages</description>
+		<tag-class>${package}.ui.taglib.MessageTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>label</name>
+		<description>for i18n of UI labels</description>
+		<tag-class>${package}.ui.taglib.LabelTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>tooltip</name>
+		<description>for i18n of UI tooltips</description>
+		<tag-class>${package}.ui.taglib.TooltipTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>user</name>
+		<description>get username</description>
+		<tag-class>${package}.ui.taglib.UserTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>menuItems</name>
+		<description>Print out menu items for user</description>
+		<tag-class>${package}.ui.taglib.UserMenuItem</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+</taglib>

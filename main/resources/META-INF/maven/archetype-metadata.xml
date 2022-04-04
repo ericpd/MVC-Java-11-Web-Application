@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+	name="mvc-hibernate-jstl-bootstrap" 
+	xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+	xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<requiredProperties>
+		<requiredProperty key="contextPath" >
+			<validationRegex><![CDATA[^[a-z]+$]]></validationRegex>
+		</requiredProperty>
+		<requiredProperty key="name" >
+			<validationRegex><![CDATA[^[A-Z]+(\s[a-zA-Z]+)*$]]></validationRegex>
+		</requiredProperty>
+		<requiredProperty key="description" />
+		<requiredProperty key="author" >
+			<validationRegex><![CDATA[^[a-z]+$]]></validationRegex>
+		</requiredProperty>
+	</requiredProperties>
+	
+	<fileSets>
+		<fileSet filtered="true" encoding="UTF-8">
+			<directory></directory>
+			<includes>
+				<include>checkstyle.xml</include>
+				<include>suppression.xml</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+	<modules>
+		<module id="${rootArtifactId}-beans" dir="__rootArtifactId__-beans" name="${rootArtifactId}-beans">
+			<fileSets>
+				<fileSet filtered="true" packaged="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory></directory>
+					<includes>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-formbeans" dir="__rootArtifactId__-formbeans" name="${rootArtifactId}-formbeans">
+			<fileSets>
+				<fileSet filtered="true" packaged="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory></directory>
+					<includes>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-app" dir="__rootArtifactId__-app" name="${rootArtifactId}-app">
+			<fileSets>
+				<fileSet filtered="true" packaged="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory></directory>
+					<includes>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+		<module id="${rootArtifactId}-ui" dir="__rootArtifactId__-ui" name="${rootArtifactId}-ui">
+			<fileSets>
+				<fileSet filtered="true" packaged="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" packaged="true" encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.properties</include>
+					</includes>
+					<excludes>
+						<exclude>sql/*</exclude>
+						<exclude>log4j.properties</exclude>
+					</excludes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/resources/sql</directory>
+					<includes>
+						<include>*.sql</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>log4j.properties</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory>src/main/webapp</directory>
+					<includes>
+						<include>**/*.jsp</include>
+						<include>**/*.xml</include>
+						<include>**/*.tld</include>
+					</includes>
+				</fileSet>
+				<fileSet encoding="UTF-8">
+					<directory>src/main/webapp</directory>
+					<includes>
+						<include>**/*.otf</include>
+						<include>**/*.jpg</include>
+						<include>**/*.css</include>
+						<include>**/*.svg</include>
+						<include>**/*.scss</include>
+						<include>**/*.ttf</include>
+						<include>**/*.png</include>
+						<include>**/*.js</include>
+						<include>**/*.eot</include>
+						<include>**/*.woff</include>
+						<include>**/*.ico</include>
+						<include>**/*.woff2</include>
+						<include>**/*.map</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" encoding="UTF-8">
+					<directory></directory>
+					<includes>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+	</modules>
+</archetype-descriptor>

@@ -1,0 +1,87 @@
+.register-input {
+	width: 360px;
+	color: #646464;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid black;
+	font-family: "Open Sans";
+	font-size: 16px;
+	line-height: 35px;
+	text-align: justify;
+	margin-bottom: 19px;
+	width: 100%
+}
+
+.form-label {
+	text-align: center;
+	color: #0E2944;
+	font-family: "Open Sans";
+	font-size: 24px;
+	line-height: 33px;
+	padding-bottom: 45px;
+}
+
+.form-register-container {
+	padding: 150px 160px;
+}
+
+@media screen and (max-width: 1200px) {
+	.form-register-container {
+		padding: 120px 80px;
+	}
+}
+@media screen and (max-width: 1120px) {
+	.image-container {
+		display: none;
+	}
+	.form-register-container {
+		width: 100%;
+		padding: 150px 160px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.image-container {
+		display: none;
+	}
+	.form-register-container {
+		width: 100%;
+		padding: 180px 80px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.image-container {
+		display: none;
+	}
+	.form-register-container {
+		width: 100%;
+		padding: 180px 20px;
+	}
+}
+
+.checkbox-label {
+	font-family: "Open Sans";
+	font-style: regular;
+	font-size: 16px;
+}
+
+.btn-register-adprimas {
+	margin-top: 15px;
+	background-color: #F3CF4D;
+	border: 0.8px solid #F3CF4D;
+	font-size: 21px;
+	color: white !important;
+	border-radius: 4px;
+	width: 100%
+}
+
+.btn-register-adprimas:hover, .btn-register-adprimas:focus {
+	background-color: #e7bd47;
+	border: 0.8px solid #e7bd47;
+}
+
+.image-register {
+	padding: 180px 80px;
+	width: 48.95833333333333VW;
+}
