@@ -2,6 +2,10 @@
 
 Introduction:</a>
 	This project archetype is a template for creating a fully functional MVC web application using Hibernate, JSTL and Bootstrap. It has an automatic database creation, auto initial load of the data, with different variety of users. It also has a checkstyle to check the proper coding of your project immediately right after you enter the code.
+	
+![preview-xl](https://user-images.githubusercontent.com/17751104/161626134-ccd6e55d-98a3-4d6a-b24a-695d9972d9a4.jpg)
+	
+	
 Requirements:</p>
 •	Java v11+</p>
 •	Maven v3+</p>
@@ -145,3 +149,4 @@ g.	Can initiate streaming replication and backups? NO
   ![image028](https://user-images.githubusercontent.com/17751104/161621353-b255ac39-e599-4af1-a0dd-8a6e4ffe637a.png)
 
   
+
