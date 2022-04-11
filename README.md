@@ -149,4 +149,4 @@ g.	Can initiate streaming replication and backups? NO
   ![image028](https://user-images.githubusercontent.com/17751104/161621353-b255ac39-e599-4af1-a0dd-8a6e4ffe637a.png)
 
   
-
+cv
